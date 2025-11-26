@@ -128,3 +128,19 @@ footer{
     font-size: smaller;
     padding : 3rem;
 }
+.uplift-box {
+    /* Initial state styles */
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Smooth transition properties and timing function */
+    transform: translateY(0); /* Initial vertical position */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+
+.uplift-box:hover {
+    /* Final state styles on hover */
+    transform: translateY(-10px); /* Moves the div up by 10px */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increases shadow for a floating effect */
+}
